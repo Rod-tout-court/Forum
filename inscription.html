@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Page de Base</title>
+        <title>Inscription</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="inscription.css">
     </head>
 
     <body>
-        <div id="bandeau">w
-            <h1>Forum</h1>
-            <div id="lien_connexion">
-            <a href="" id="inscription">inscription</a>
-            <a href="" id="connexion">connexion</a>
-        </div>
+        <div id="bandeau">
+            <h1><a href="./base.html">Forum</a></h1>
+            <p id="lien_connexion">
+                <a href="inscription.html" id="inscription">inscription</a>
+                <a href="connexion.html" id="connexion">connexion</a>
+            </p>
         </div>
         <div id="contenue">
         <form method="post">
-            <label for=""></label><input type="text" name="username" id="username">
-            <label for=""></label><input type="email" name="" id="">
-            <label for=""></label><input type="password" name="" id="">
-
+            <h2>Inscription</h2>
+            <hr>
+            <table>
+                <tr><td><label for="email">E-mail</label></td><td><input type="email" name="email" id="email"></td></tr>
+                <tr><td><label for="username">Nom d'utilisateur</label></td><td><input type="text" name="username" id="username"></td></tr>
+                <tr><td><label for="pass">mot de passe</label></td><td><input type="password" name="pass" id="pass"></td></tr>
+            </table>
+            <input type="submit" value="S'inscrire">
         </form>
         </div>
 

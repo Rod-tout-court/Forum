@@ -3,7 +3,9 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#bandeau{
+#bandeau
+{
+    background-color: #d4d3d3;
     display:grid;
     grid-template-columns: auto auto;
     box-shadow: 0px 5px 3px #88888859;
@@ -11,7 +13,9 @@ html{
 
 #lien_connexion
 {
-    align-content: right;
+    display:table-cell;
+    text-align: right;
+    vertical-align: middle;
 }
 
 #contenue{
@@ -20,4 +24,5 @@ html{
     margin: 10px auto;
     padding: 10px 20px;
     width:60%;
+    height: 100%;
 }

@@ -1,0 +1,10 @@
+h2{
+    margin:5px;
+    text-align: center;
+}
+
+#contenue{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+}
