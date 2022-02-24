@@ -1,0 +1,23 @@
+html{
+    background-color: #e6e6e6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bandeau{
+    display:grid;
+    grid-template-columns: auto auto;
+    box-shadow: 0px 5px 3px #88888859;
+}
+
+#lien_connexion
+{
+    align-content: right;
+}
+
+#contenue{
+    background-color: #ffffff;
+    border: solid rgb(128, 128, 128) 1px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width:60%;
+}
