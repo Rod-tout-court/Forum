@@ -4,6 +4,7 @@
         <title>Page de Base</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="table.css">
     </head>
 
     <body>
@@ -15,11 +16,16 @@
             </p>
         </div>
         <div id="contenue">
+            <h2>Liste des fils</h2>
            <table>
-               <thead></thead>
-               <tr><td class="titre">Titre du sujet 1</td><td class="auteur">auteur1</td><td class="date">date du premier post</td><td class="date">date du dernier post</td><td class="nb_message">nombre de messages</td></tr>
-               <tr><td class="titre">Titre du sujet 2</td><td class="auteur">auteur2</td><td class="date">date du premier post</td><td class="date">date du dernier post</td><td class="nb_message">nombre de messages</td></tr>
+               <thead>
+                   <tr><td>Titre</td><td>auteur</td><td>date du premier post</td><td>date du dernier post</td><td>Nombre de messages</td></tr>
+               </thead>
+               <tr><td class="titre"><a href="fils.html">Titre du sujet 1</a></td><td class="auteur">auteur1</td><td class="date">date du premier post</td><td class="date">date du dernier post</td><td class="nb_message">nombre de messages</td></tr>
+               <tr><td class="titre"><a href="fils.html">Titre du sujet 2</a></td><td class="auteur">auteur2</td><td class="date">date du premier post</td><td class="date">date du dernier post</td><td class="nb_message">nombre de messages</td></tr>
+               <tr><td class="titre"><a href="fils.html">Titre du sujet 3</a></td><td class="auteur">auteur2</td><td class="date">date du premier post</td><td class="date">date du dernier post</td><td class="nb_message">nombre de messages</td></tr>
            </table>
+           <p id="nouveau_fil"><a href="nouveau_fil.html"></a></p>
         </div>
 
     </body>

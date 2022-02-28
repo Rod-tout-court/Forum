@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Page de Base</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="nouveau_fil.css">
+    </head>
+
+    <body>
+        <div id="bandeau">
+            <h1>Forum</h1>
+            <p id="lien_connexion">
+                <a href="inscription.html" id="inscription">inscription</a>
+                <a href="connexion.html" id="connexion">connexion</a>
+            </p>
+        </div>
+        <div id="contenue">
+            <form method="post">
+                <div>
+                    <input type="radio" name="identite" id="ID" value="public" checked> Publier sous mon nom <br>
+                    <input type="radio" name="identite" id="ID" value="anon"> Anonyme
+                </div>
+                <div id="div_message">
+                    <label for="message">Message</label><br>
+                    <textarea name="msg" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+
+    </body>
+</html>

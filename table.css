@@ -1,0 +1,13 @@
+table{
+    border: solid #000 1px;
+    border-collapse: collapse;
+}
+
+td{
+    border : solid #000 1px;
+    padding : 5px;
+}
+
+thead{
+    background-color: azure;
+}
