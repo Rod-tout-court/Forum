@@ -9,14 +9,16 @@
 
     <body>
         <div id="bandeau">
-            <h1>Forum</h1>
-            <p id="lien_connexion">
-                <a href="inscription.html" id="inscription">inscription</a>
-                <a href="connexion.html" id="connexion">connexion</a>
-            </p>
+            <h1><a href="./base.html">Forum</a></h1>
+            <div id="lien_connexion">
+                <a href="inscription.html" class="bouton" id="inscription">inscription</a>
+                <a href="connexion.html" class="bouton" id="connexion">connexion</a>
+            </div>
+            <hr id="barre">
         </div>
         <div id="contenue">
-            <h2>Liste des fils</h2>
+            <h2>Profil</h2>
+            <p id="utilisateur">Auteur</p>
            <table>
                <thead>
                    <tr><td>Titre</td><td>auteur</td><td>date du premier post</td><td>date du dernier post</td><td>Nombre de messages</td></tr>
@@ -25,7 +27,7 @@
                <tr><td class="titre"><a href="fils.html">Titre du sujet 2</a></td><td class="auteur">auteur2</td><td class="date">date du premier post</td><td class="date">date du dernier post</td><td class="nb_message">nombre de messages</td></tr>
                <tr><td class="titre"><a href="fils.html">Titre du sujet 3</a></td><td class="auteur">auteur2</td><td class="date">date du premier post</td><td class="date">date du dernier post</td><td class="nb_message">nombre de messages</td></tr>
            </table>
-           <p id="nouveau_fil"><a href="nouveau_fil.html"></a></p>
+           <p id="nouveau_fil"><a href="nouveau_fil.html">+nouveau fil</a></p>
         </div>
 
     </body>

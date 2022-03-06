@@ -1,0 +1,16 @@
+.message{
+    display:  grid;
+    grid-row: auto auto;
+    border-collapse: collapse;
+    margin-top : 10px;
+}
+
+.texte{
+    border: solid black 1px;
+    border-collapse: collapse;
+}
+
+.titre {
+    border: solid black 1px;
+    border-collapse: collapse;
+}

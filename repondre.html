@@ -9,17 +9,19 @@
 
     <body>
         <div id="bandeau">
-            <h1>Forum</h1>
+            <h1><a href="./base.html">Forum</a></h1>
             <p id="lien_connexion">
-                <a href="inscription.html" id="inscription">inscription</a>
-                <a href="connexion.html" id="connexion">connexion</a>
+                <a href="inscription.html" class="bouton" id="inscription">inscription</a>
+                <a href="connexion.html" class="bouton" id="connexion">connexion</a>
             </p>
         </div>
         <div id="contenue">
             <form method="post">
                 <div>
-                    <input type="radio" name="identite" id="ID" value="public" checked> Publier sous mon nom <br>
-                    <input type="radio" name="identite" id="ID" value="anon"> Anonyme
+                    <input type="radio" name="identite" id="ID" onchange="tc.disable" value="public" checked> Publier sous mon nom <br>
+                    <input type="radio" name="identite" id="ID"  onchange="tc.enable" value="anon"> Anonyme<br>
+                    <label for="tc">tripcode: </label><input type="text" name="tripcode" id="tc" disabled>
+                    <!-- Ajouter le tripcode en cas de publication anonyme -->
                 </div>
                 <div id="div_message">
                     <label for="message">Message</label><br>
