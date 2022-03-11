@@ -4,6 +4,12 @@ html{
     margin-bottom: 10px;
 }
 
+body{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto auto;
+}
+
 #bandeau
 {
     position: fixed;
@@ -38,6 +44,7 @@ html{
 }
 
 .bouton{
+    grid-row: 1;
     text-decoration: none;
     color: black;
     padding: 5px;
@@ -63,7 +70,25 @@ html{
     color:white;
 }
 
+#choixsallons {
+    grid-area: "colg";
+    position: absolute;
+    width: 202px;
+    height: auto;
+    left: 34px;
+    top: 102px;
+    background: #C4C4C4;
+}
 
+#pub {
+    grid-area: "cold";
+    position: absolute;
+    width: 202px;
+    height: auto;
+    right: 34px;
+    top: 102px;
+    background: #C4C4C4;
+}
 
 #barre{
     margin-top: 0px;
@@ -85,6 +110,7 @@ html{
 }
 
 #contenue{
+    grid-column: 2;
     background-color: #ffffff;
     border: solid rgb(128, 128, 128) 1px;
     margin: 10px auto;
@@ -92,4 +118,22 @@ html{
     padding: 10px 20px;
     width:60%;
     height: 100%;
+}
+
+#place {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 30%;
+}
+
+#colg{
+    position: fixed;
+}
+
+#Salon1
+#Pub1,
+#Pub2 {
+    padding: 6%;
 }
