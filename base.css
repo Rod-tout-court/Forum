@@ -71,7 +71,6 @@ body{
 }
 
 #choixsallons {
-    grid-area: "colg";
     position: absolute;
     width: 202px;
     height: auto;
@@ -81,19 +80,19 @@ body{
 }
 
 #pub {
-    grid-area: "cold";
-    position: absolute;
-    width: 202px;
+    width: 20%;
     height: auto;
-    right: 34px;
-    top: 102px;
+    right: 3%;
+    top: 10%;
     background: #C4C4C4;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 #barre{
     margin-top: 0px;
     width: 100%;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     border: solid #b4b4b4 1px;
 }
 
@@ -116,12 +115,11 @@ body{
     margin: 10px auto;
     margin-top : 10%;
     padding: 10px 20px;
-    width:60%;
+    width:fit-content;
     height: 100%;
 }
 
 #place {
-    position: absolute;
     margin-top: 40%;
     margin-left: 40%;
     margin-right: 40%;
@@ -136,4 +134,12 @@ body{
 #Pub1,
 #Pub2 {
     padding: 6%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img, video{
+    width: 150px;
 }
