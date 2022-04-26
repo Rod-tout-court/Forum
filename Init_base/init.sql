@@ -26,8 +26,7 @@ CREATE TABLE utilisateur(
         hash_pass Varchar (50) NOT NULL COMMENT "Contient le hash du mot de passe"  ,
         email     Varchar (50) NOT NULL ,
         anon      Bool NOT NULL COMMENT "Si l'utilisateur est anonyme ou non. Si l'utilisateur est anonyme, on ne peut pas se connecter à ce compte"  ,
-        pseudo    Varchar (50) NOT NULL ,
-        cookie    Varchar (50) NOT NULL
+        pseudo    Varchar (50) NOT NULL
 	,CONSTRAINT utilisateur_AK0 UNIQUE (pseudo)
 	,CONSTRAINT utilisateur_PK PRIMARY KEY (user_id)
 )ENGINE=InnoDB COMMENT "Table relatif aux utilisateurs" ;
@@ -60,19 +59,6 @@ CREATE TABLE fil(
 	,CONSTRAINT fil_PK PRIMARY KEY (fil_id)
 )ENGINE=InnoDB COMMENT "Un thread possède un titre ainsi qu'un message d'origine qui est le message avec le plus petit identifiant" ;
 
-
-#------------------------------------------------------------
-# Table: cookie
-#------------------------------------------------------------
-
-CREATE TABLE cookie(
-        cookie   Varchar (50) NOT NULL ,
-        validite TimeStamp NOT NULL ,
-        user_id  Int NOT NULL
-	,CONSTRAINT cookie_PK PRIMARY KEY (cookie)
-)ENGINE=InnoDB;
-
-
 #------------------------------------------------------------
 # Table: abonné
 #------------------------------------------------------------
@@ -85,15 +71,6 @@ CREATE TABLE abonne(
 
 
 
-
-ALTER TABLE utilisateur
-	ADD CONSTRAINT utilisateur_cookie0_FK
-	FOREIGN KEY (cookie)
-	REFERENCES cookie(cookie);
-
-ALTER TABLE utilisateur 
-	ADD CONSTRAINT utilisateur_cookie0_AK 
-	UNIQUE (cookie);
 
 ALTER TABLE message
 	ADD CONSTRAINT message_utilisateur0_FK
@@ -119,15 +96,6 @@ ALTER TABLE fil
 	ADD CONSTRAINT fil_salon1_FK
 	FOREIGN KEY (salon_id)
 	REFERENCES salon(salon_id);
-
-ALTER TABLE cookie
-	ADD CONSTRAINT cookie_utilisateur0_FK
-	FOREIGN KEY (user_id)
-	REFERENCES utilisateur(user_id);
-
-ALTER TABLE cookie 
-	ADD CONSTRAINT cookie_utilisateur0_AK 
-	UNIQUE (user_id);
 
 ALTER TABLE abonne
 	ADD CONSTRAINT abonne_salon0_FK
