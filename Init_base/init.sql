@@ -23,7 +23,7 @@ CREATE TABLE salon(
 
 CREATE TABLE utilisateur(
         user_id   Int  Auto_increment  NOT NULL ,
-        hash_pass Varchar (50) NOT NULL COMMENT "Contient le hash du mot de passe"  ,
+        hash_pass Varchar (60) NOT NULL COMMENT "Contient le hash du mot de passe"  ,
         email     Varchar (50) NOT NULL ,
         anon      Bool NOT NULL COMMENT "Si l'utilisateur est anonyme ou non. Si l'utilisateur est anonyme, on ne peut pas se connecter à ce compte"  ,
         pseudo    Varchar (50) NOT NULL
