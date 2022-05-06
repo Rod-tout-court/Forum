@@ -8,7 +8,7 @@
     if (creer_compte($username, $email, $pass)){
         session_start();
         $_SESSION["username"]=$username;
-        header("Location: http://localhost/Forum/Forum/");
+        header("Location: http://localhost/");
         exit();
     }
 

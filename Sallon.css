@@ -91,8 +91,8 @@ h3 {
 }
 
 #Salon1,
-#Pub1,
-#Pub2 {
+.pub,
+.pub {
     padding: 6%;
 }
 

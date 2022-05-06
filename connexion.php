@@ -6,10 +6,8 @@
     $pass = $_POST["pass"];
 
     if (se_connecter($username, $pass)){
-        session_start();
-        $_SESSION["username"]=$username;
 
-        header("Location: http://localhost/Forum/Forum");
+        header("Location: http://localhost/");
     }
 
     else{

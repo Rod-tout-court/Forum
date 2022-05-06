@@ -12,14 +12,14 @@
             <head>
                 <title><?php echo "$titre" ?></title>
                 <meta charset="UTF-8">
-                <link rel="stylesheet" href="http://localhost/Forum/Forum/base.css">
-                <link rel="stylesheet" href="http://localhost/Forum/Forum/table.css">
-                <link rel="stylesheet" href="http://localhost/Forum/Forum/connexion.css">
+                <link rel="stylesheet" href="http://localhost/base.css">
+                <link rel="stylesheet" href="http://localhost/table.css">
+                <link rel="stylesheet" href="http://localhost/connexion.css">
             </head>
 
             <body>
                 <div id="bandeau">
-                    <h1><a id="titre" href="http://localhost/Forum/Forum/index.php">Forum</a></h1>
+                    <h1><a id="titre" href="http://localhost/index.php">Forum</a></h1>
                     <?php header_compte()?>
                     <hr id="barre">
                 </div>
@@ -51,27 +51,24 @@
     
             <section id="cold">
     
-                <ul id="Pub1">
+                <ul class="pub">
                     <li>
-                        <a  class="image" href="#conseil"><img src="http://localhost/Forum/Forum/canno.jpg" alt="Cannot photo" /></a>
+                        <a  class="image" href="#conseil"><img src="http://localhost/canno.jpg" alt="Cannot photo" /></a>
                     </li>
                     <li>
-                        <a class="image" href="#conseil"><img src="http://localhost/Forum/Forum/elephant.jpg" alt="Photo elephant" /></a>
+                        <a class="image" href="#conseil"><img src="http://localhost/elephant.jpg" alt="Photo elephant" /></a>
                     </li>
                     <li>
-                        <a class="image" href="#conseil"><img src="http://localhost/Forum/Forum/libre.jpg" alt="La liberté" /></a>
+                        <a class="image" href="#conseil"><img src="http://localhost/libre.jpg" alt="La liberté" /></a>
                     </li>
                 </ul>
     
-            </section>
-    
-            <section id="coldb">
-                <ul id="Pub2">
+                <ul class="pub">
                     <li>
-                        <a class="image" href="#conseil"><img src="http://localhost/Forum/Forum/soleil.jpg" alt="Levé Soleil" /></a>
+                        <a class="image" href="#conseil"><img src="http://localhost/soleil.jpg" alt="Levé Soleil" /></a>
                     </li>
                     <li>
-                        <a class="image" href="#conseil"><video src="http://localhost/Forum/Forum/video.webm" alt="Video de motivation" autoplay ></video></a>
+                        <a class="image" href="#conseil"><video src="http://localhost/video.webm" alt="Video de motivation" autoplay ></video></a>
                     </li>
     
                 </ul>

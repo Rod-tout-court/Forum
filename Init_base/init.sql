@@ -1,7 +1,6 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
-DROP DATABASE forum;
 CREATE DATABASE IF NOT EXISTS forum;
 USE forum;
 
