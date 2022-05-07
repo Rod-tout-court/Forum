@@ -8,7 +8,8 @@ require_once("fonctions_comptes.php");
     }
 
     function ajouter_mesg($link, $message, $id_fil, $id_user){
-        $sql="INSERT INTO message (content, user_id, fil_id) VALUES ('$message',$id_user ,$id_fil)";
+        $date = date('Y-m-d H:i:s', time());
+        $sql="INSERT INTO message (publication, content, user_id, fil_id) VALUES ('$date', '$message',$id_user ,$id_fil)";
         $link->query($sql);
     }
 ?>

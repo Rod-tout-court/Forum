@@ -22,9 +22,8 @@
         $max_id=$link->query("SELECT MAX(fil_id) FROM fil");
         $max_id = mysqli_fetch_row($max_id);
   
-        ajouter_mesg($link, $message, $id, $max_id[0]);
+        ajouter_mesg($link, $message, $max_id[0], $id);
         $link->close();
-;
     }
 
     header("Location: http://localhost");

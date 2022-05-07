@@ -86,6 +86,7 @@ body{
     background: #C4C4C4;
     margin-top: 46%;
     margin-left: 5%;
+    transform: translateX(-10%);
 }
 
 #barre{
@@ -106,14 +107,7 @@ body{
     margin-right: 10px;
     margin-left: auto;
 }
-#message{
-    border: #000 solid 1px;
-    border-collapse: collapse;
-}
 
-#entete{
-    border: #000 solid 1px;
-}
 #contenue{
     grid-column: 2;
     background-color: #ffffff;
@@ -121,7 +115,7 @@ body{
     margin: 10px auto;
     margin-top : 10%;
     padding: 10px 20px;
-    width:fit-content;
+    width:77%;
     height: 100%;
 }
 

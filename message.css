@@ -1,0 +1,15 @@
+#contenue{
+    width: 77%;
+}
+
+#message{
+    border: #525252 solid 1px;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#entete{
+    border: #525252 solid 1px;
+    background-color: beige;
+}

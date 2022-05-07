@@ -12,9 +12,10 @@
             <head>
                 <title><?php echo "$titre" ?></title>
                 <meta charset="UTF-8">
-                <link rel="stylesheet" href="http://localhost/base.css">
-                <link rel="stylesheet" href="http://localhost/table.css">
-                <link rel="stylesheet" href="http://localhost/connexion.css">
+                <link rel="stylesheet" href="base.css">
+                <link rel="stylesheet" href="table.css">
+                <link rel="stylesheet" href="connexion.css">
+                <link rel="stylesheet" href="message.css">
             </head>
 
             <body>

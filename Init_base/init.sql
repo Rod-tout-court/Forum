@@ -37,7 +37,7 @@ CREATE TABLE utilisateur(
 
 CREATE TABLE message(
         msg_id         Int  Auto_increment  NOT NULL ,
-        publication    Date NOT NULL ,
+        publication    Datetime NOT NULL ,
         content        Text NOT NULL COMMENT "Contenu du message"  ,
         user_id        Int NOT NULL ,
         fil_id         Int NOT NULL ,

@@ -48,6 +48,9 @@
     }
 
     function se_connecter($username, $pass){
+        if(!isset($_SESSION)){
+            session_start();
+        }
         $link = connexion();
         $pass = $link->real_escape_string($pass);
         $username = $link->real_escape_string($username);
